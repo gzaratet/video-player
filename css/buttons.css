@@ -2,10 +2,14 @@
   inline-size: 32px;
   block-size: 32px;
   border: none;
-  border: 1px solid red;
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
+}
+
+.button:active {
+  transform: scale(0.9);
 }
 
 #play {
