@@ -8,20 +8,43 @@
     <title>Video Player</title>
   </head>
   <body>
-    <h1>Hola Mundo!</h1>
-    <button class="button" id="backward"></button>
-    <button class="button" id="forward"></button>
-    <button class="button" id="play"></button>
-    <button class="button" id="pause" hidden></button>
-    <button>avanzar 10 segundos</button>
-    <video
-      id="video"
-      poster="./images/poster.jpg"
-      muted
-      controls
-      src="./videos/lofi.mp4"
-      width="400"
-    ></video>
+    <div class="wrapper">
+      <div class="player">
+        <button
+          class="button"
+          id="backward"
+          aria-label="Backward 10 sec"
+          title="Backward 10 sec"
+        ></button>
+        <button
+          class="button"
+          id="play"
+          aria-label="Play"
+          title="Play"
+        ></button>
+        <button
+          class="button"
+          id="pause"
+          hidden
+          aria-label="Pause"
+          title="Pause"
+        ></button>
+        <button
+          class="button"
+          id="forward"
+          aria-label="Forward 10 sec"
+          title="Forward 10 sec"
+        ></button>
+        <video
+          id="video"
+          poster="./images/poster.jpg"
+          muted
+          controls
+          src="./videos/lofi.mp4"
+          width="400"
+        ></video>
+      </div>
+    </div>
     <script>
       const $video = document.querySelector('#video');
       const $play = document.querySelector('#play');
