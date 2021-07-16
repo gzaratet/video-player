@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,39 +10,44 @@
   <body>
     <div class="wrapper">
       <div class="player">
-        <button
-          class="button"
-          id="backward"
-          aria-label="Backward 10 sec"
-          title="Backward 10 sec"
-        ></button>
-        <button
-          class="button"
-          id="play"
-          aria-label="Play"
-          title="Play"
-        ></button>
-        <button
-          class="button"
-          id="pause"
-          hidden
-          aria-label="Pause"
-          title="Pause"
-        ></button>
-        <button
-          class="button"
-          id="forward"
-          aria-label="Forward 10 sec"
-          title="Forward 10 sec"
-        ></button>
         <video
           id="video"
           poster="./images/poster.jpg"
           muted
-          controls
           src="./videos/lofi.mp4"
           width="400"
         ></video>
+        <h2 class="player-title">Música para programar</h2>
+        <div class="player-actions">
+          <button
+            class="button"
+            id="backward"
+            aria-label="Backward 10 sec"
+            title="Backward 10 sec"
+          ></button>
+          <button
+            class="button"
+            id="play"
+            aria-label="Play"
+            title="Play"
+          ></button>
+          <button
+            class="button"
+            id="pause"
+            hidden
+            aria-label="Pause"
+            title="Pause"
+          ></button>
+          <button
+            class="button"
+            id="forward"
+            aria-label="Forward 10 sec"
+            title="Forward 10 sec"
+          ></button>
+        </div>
+        <div class="player-progress">
+          <input type="range" />
+        </div>
       </div>
     </div>
     <script src="./js/index.js"></script>
